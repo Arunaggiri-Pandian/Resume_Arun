@@ -1,0 +1,320 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,10.5pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{textcomp}
+\usepackage{siunitx}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\addtolength{\footskip}{0.7in}
+\setlength{\columnsep}{-1pt}
+\usepackage[margin=0.5in]{geometry}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+% \addtolength{\oddsidemargin}{-0.6in}
+% \addtolength{\evensidemargin}{-0.6in}
+% \addtolength{\textwidth}{1.19in}
+% \addtolength{\topmargin}{-.7in}
+% \addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \text{\small#3} & \text{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textsc{\small#1} & \textsc{}{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \textbf{Arunaggiri Pandian Karunanidhi}} \\ \vspace{4pt}
+    231 Quinby Road, Apartment D, Rochester, New York 14623 \\ \vspace{2.5pt}
+    \small \raisebox{-0.1\height}\faPhone\ \textcolor{blue}{585-303-4622} ~ \href{mailto:arunaggiri.pandian@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{\textcolor{blue}{arunaggiri.pandian@gmail.com}}} ~ 
+    \href{https://www.linkedin.com/in/arunaggiri-pandian}{\raisebox{-0.2\height}\faLinkedin\ \underline{\textcolor{blue}{linkedin.com/in/arunaggiri-pandian}}}  ~
+    \href{https://github.com/Arunaggiri-Pandian}{\raisebox{-0.2\height}\faGithub\ \underline{\textcolor{blue}{github.com/Arunaggiri-Pandian}}}
+    \vspace{-2pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Rochester}{Aug 2022 -- Dec 2023}
+     {Master of Science in Data Science; \textbf{GPA}: 3.7 / 4.0}
+     {Rochester, New York}
+      
+%      {\textbf{Courses:} Computational Introduction to Statistics, Data Mining, Tools for Data Science, Introduction to Statistical Machine Learning, Database Systems, Data Science at Scale}\vspace{-3pt}
+
+%      \vspace{5pt}
+ %     \textbf{Research Assistant:} Collaborated with Prof. Caitlin Dreisbach in her innovative research to predict fetal weight using ultrasound images. Leveraged Convolutional Neural Networks (CNN) for image analysis, contributing to significant improvements in prediction accuracy and advancing understanding in the field.
+
+     % \vspace{1pt}
+     % \textbf{Research Assistantship \hfill{Jan 2023 -- Aug 2023}}
+     % \begin{itemize}[noitemsep,nolistsep]
+     %      \item Collaborated on building a \textbf{Convolutional Neural Network} model for late-trimester fetal weight prediction.
+     %      \item Reduced the prevalent \textbf{15\% error} in predicting weight for newborns anticipated to have a normal weight.
+     % \end{itemize}
+
+
+%      \vspace{5pt}
+%      \textbf{Teaching Assistant:} Assisted Prof. Edward Herger in instructing the Circuit Analysis course.
+    
+    \resumeSubheading
+      {Anna University}{Aug 2018 -- Jun 2022}
+      {Bachelor of Engineering in Electronics and Communication Engineering; \textbf{GPA}: 3.9 / 4.0}{Tamil Nadu, India}
+  \resumeSubHeadingListEnd  
+\vspace{4pt}
+%------RELEVANT COURSEWORK-------
+%\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+       % \begin{multicols}{4}
+          %  \begin{itemize}[itemsep=-5pt, parsep=3pt]
+          %      \item\small Data %Structures
+           %     \item Software Methodology
+          %      \item Algorithms Analysis
+           %     \item Database Management
+           %     \item Artificial Intelligence
+           %     \item Internet Technology
+            %    \item Systems Programming
+             %   \item Computer Architecture
+           % \end{itemize}
+       % \end{multicols}
+       % \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd  
+\vspace{-9pt}    
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Micron Technology}{May 2023 -- Present}
+      {Data Scientist Intern}{Boise, Idaho}
+      \resumeItemListStart
+        \resumeItem{Engineered a \textbf{data preprocessing pipeline} for approximately \textbf{62,000} die failure images to optimize feature extraction for the pre-trained \textbf{Xception} model.}
+        \resumeItem{Implemented a \textbf{Sequential K-Means Clustering} technique on extracted image features, achieving a \textbf{20\%} improvement in accurately identifying diverse failure clusters.} 
+        \resumeItem{Innovated the \textbf{Dispersed Density Score (DDS)}, a novel metric for cluster quality assessment, which enhanced the efficiency of failure analysis procedures by an impressive \textbf{35\%}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {University of Rochester Medical Center}{Jan 2023 -- Aug 2023}
+      {Graduate Research Assistant - Computer Vision}{Rochester, New York}
+      \resumeItemListStart
+        \resumeItem{Employed \textbf{Convolutional Neural Network} and \textbf{transfer learning}, achieving a \textbf{15\%} error reduction in predicting weight of newborns.}
+        \resumeItem{Optimized prenatal care by utilizing specialized pre-trained models such as \textbf{U-Net} for \textbf{fetal ultrasound images}.} 
+        \resumeItem{Leading a team of \textbf{four}, engaged in constructing a novel architecture aimed at \textbf{outperforming} the existing models, thereby enhancing \textbf{precision} in fetal weight prediction.}
+      \resumeItemListEnd      
+
+    \resumeSubheading
+      {Delta Electronics}{Feb 2022 -- Jun 2022}
+      {Data Analyst Intern}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Improved the \textbf{First Pass Yield Rate} in the production line by analyzing unit failure data utilizing \textbf{SQL} and \textbf{Python}.}
+        \resumeItem{Presented insights through \textbf{dashboards} to testing managers, resulting in a \textbf{13\%} reduction in \textbf{failure analysis costs}.} 
+        \resumeItem{Implemented a \textbf{comparative analysis} to identify the most efficient component examination method, reducing total testing cycles and saving approximately \textbf{60 labor hours} monthly.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {University of Galway}{Mar 2021 -- Jan 2022}
+      {NLP Research Intern}{Galway, Ireland}
+      \resumeItemListStart
+
+        \resumeItem{Designed and implemented a transformer-based sentiment analysis model with a \textbf{soft voting classifier}, resulting in a \textbf{12\%} improvement in classification accuracy for \textbf{code-mixed data}.}
+        \resumeItem{Proposed a novel \textbf{semi-supervised} approach to categorize misogynous memes into four overlapping categories.}
+        \resumeItem{Elevated elderly speech recognition accuracy by \textbf{17\%} through the development of a \textbf{speech corpus} for ASR training.}
+        %\resumeItem{}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-9pt}
+
+\section{Publications}
+\textbf{[1]} {Identification of Indian Medicinal Plants from Leaves using Transfer Learning Approach.}
+\hfill  [\href{https://doi.org/10.1109/icoei51242.2021.9452917}{\textbf{\textcolor{blue}{View}}}]\\ 
+
+\textbf{[2]} {Development and Deployment of a Machine Learning Model for Automatic Heart Failure Prediction.}
+\hfill  [\href{https://doi.org/10.1109/asiancon51346.2021.9544787}{\textbf{\textcolor{blue}{View}}}]\\ 
+
+\textbf{[3]} {A Comparative Study on Plant Classification Performance Using Deep Learning Optimizers.}
+\hfill  [\href{https://doi.org/10.1109/eti4.051663.2021.9619238}{\textbf{\textcolor{blue}{View}}}]\\ 
+
+\textbf{[4]} {A Novel Convolutional Neural Network Architecture to Diagnose COVID-19.}
+\hfill  [\href{https://doi.org/10.1109/icspc51351.2021.9451701}{\textbf{\textcolor{blue}{View}}}]\\ 
+
+\textbf{[5]} {Transformer Based Sentiment Analysis in Dravidian Languages.}
+\hfill  [\href{https://ceur-ws.org/Vol-3159/T6-6.pdf}{\textbf{\textcolor{blue}{View}}}]\\ 
+
+\textbf{[6]} {A Reliable Technique for Sentiment Analysis on Tweets via Machine Learning and BERT.}
+\hfill  [\href{https://doi.org/10.1109/asiancon51346.2021.9545013}{\textbf{\textcolor{blue}{View}}}]\\ 
+
+
+%\textbf{[7]} {}
+%\hfill  [\href{}{\textbf{\textcolor{blue}{View}}}]\\ 
+\vspace{-2pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Public Opinion on Student Loan Forgiveness} $|$ Python, NLP, Twitter}%{January 2021}
+
+          \resumeItemListStart
+            \resumeItem{Analyzed \textbf{public opinion} on the Student Loan Forgiveness program using data \textbf{scraped} from Twitter.}
+            \resumeItem{Performed \textbf{sentiment analysis} using \textbf{VADER}, determining that 51.5\% of responses were positive, 31.1\% were negative, and 17.4\% were neutral towards the program.}
+           \resumeItem{Utilized \textbf{LDA} for \textbf{topic modeling} to uncover reasons behind sentiment categorization and understand public perception.}
+%            \resumeItem{Revealed that \textbf{51.5\%}, \textbf{31.1\%} and \textbf{17.4\%} of people had positive, negative, and neutral opinions of the scheme, respectively.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+          \resumeProjectHeading
+          {\textbf{Graduate Housing Marketplace} $|$ MySQL, HTML, CSS}%{October 2020}        
+
+          \resumeItemListStart
+            \resumeItem{Developed and implemented a \textbf{database system} for the graduate student housing market at the University of Rochester.}
+            \resumeItem{Improved housing transactions with a \textbf{user-friendly platform} for students to buy and sell.}
+            \resumeItem{Streamlined \textbf{inventory management}, leading to a \textbf{75\%} reduction in manual paperwork, and improved overall \textbf{tracking} and \textbf{monitoring} of available items.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-9pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.0in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, R, MySQL, Oracle, SAS, MATLAB} \\
+     \textbf{Data Expertise}{: Statistical Modeling, Data Analysis, Machine Learning, Data Mining, Deep Learning, Data Visualization, ETL Development, Natural Language Processing, Prompt Engineering} \\
+     \textbf{Tools and Frameworks}{: PyTorch, Scikit-learn, Keras, NLTK, TensorFlow, Git, NumPy, Pandas, Matplotlib, Seaborn, Tableau, PySpark, Databricks, HuggingFace, ChatGPT} \\
+    }}
+ \end{itemize}
+ \vspace{-13pt}
+
+
+%-----------INVOLVEMENT---------------
+% \section{Achievements}
+
+% \resumeItemListStart
+% \resumeItem{Won the Designing the Cities of Tomorrow, a \textbf{24-hour hackathon} and received \textbf{\$1200} (USD) prize money.}\vspace{-4pt}
+% \resumeItem{Earned \textbf{second position} under open division in the University of Rochester Data Science Biomedical Hackathon.}\vspace{-4pt}
+% \resumeItem{Awarded \textbf{40\% tuition scholarship} at the University of Rochester.}\vspace{-4pt}
+% \resumeItem{Received the \textbf{Best Research Paper Award} at the 2021 International Conference on Signal Processing and Communication.}
+% \resumeItemListEnd
+
+% \vspace{-17pt}
+
+
+
+%-----------INVOLVEMENT---------------
+% \section{Leadership / Extracurricular}
+
+% \resumeItemListStart
+%     \resumeItem{Served as the \textbf{captain} of the \textbf{tennis team} for two consecutive years from 2018 to 2020.}\vspace{-4pt}
+%     \resumeItem{Elected as the \textbf{president} for the EWB-IUCEE Student Chapter for the year 2021.}\vspace{-4pt}
+% %    \resumeItem{Organized a \textbf{shared task} on “Multimodal Sentiment Analysis in Dravidian Languages” at the 60th Annual Meeting of ACL.}\vspace{-4pt}
+
+% \resumeItemListEnd
+    
+
+\end{document}
